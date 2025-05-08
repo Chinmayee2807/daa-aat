@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Second Gear, First Choice: Your Budget Car Companion</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #2c3e50;
+      color: white;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .budget-bar {
+      display: flex;
+      height: 30px;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 1rem 0;
+    }
+
+    .low-budget {
+      background-color: #2ecc71;
+      flex: 1;
+    }
+
+    .mid-budget {
+      background-color: #f1c40f;
+      flex: 1;
+    }
+
+    .high-budget {
+      background-color: #e74c3c;
+      flex: 1;
+    }
+
+    .budget-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .car-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .car-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .car-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .car-content {
+      padding: 1rem;
+    }
+
+    .car-title {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+
+    .car-price {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.3rem 0.7rem;
+      border-radius: 10px;
+      font-size: 0.8rem;
+      margin-top: 0.5rem;
+    }
+
+    .within-budget {
+      background-color: #2ecc71;
+      color: white;
+    }
+
+    .above-budget {
+      background-color: #e74c3c;
+      color: white;
+    }
+
+    .stretch-budget {
+      background-color: #f1c40f;
+      color: black;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #ecf0f1;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1></h1>
+    <p>Second Gear, First Choice: Your Budget Car Companion</p>
+  </header>
+
+  <div class="container">
+    <div class="budget-labels">
+      <span>Low Budget (&lt; ₹50,000)</span>
+      <span>Mid Budget (₹50,000 - ₹5,50,000)</span>
+      <span>High Budget (&gt; ₹5,50,000)</span>
+    </div>
+    <div class="budget-bar">
+      <div class="low-budget"></div>
+      <div class="mid-budget"></div>
+      <div class="high-budget"></div>
+    </div>
+
+    <div class="card-grid">
+      <div class="car-card">
+        <img src="https://source.unsplash.com/featured/?usedcar1" alt="Used Car 1" class="car-image" />
+        <div class="car-content">
+          <h2 class="car-title">Swift 2012</h2>
+          <p class="car-price">₹80,000</p>
+          <span class="tag within-budget">Within Budget</span>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="https://source.unsplash.com/featured/?usedcar2" alt="Used Car 2" class="car-image" />
+        <div class="car-content">
+          <h2 class="car-title">Innova 2017</h2>
+          <p class="car-price">₹5,00,000</p>
+          <span class="tag stretch-budget">Stretch Budget</span>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="https://source.unsplash.com/featured/?usedcar3" alt="Used Car 3" class="car-image" />
+        <div class="car-content">
+          <h2 class="car-title">BMW 3 Series 2017</h2>
+          <p class="car-price">₹7,30,000</p>
+          <span class="tag above-budget">Above Budget</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Second Gear, First Choice: Your Budget Car Companion. All rights reserved.
+  </footer>
+</body>
+</html>
